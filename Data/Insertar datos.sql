@@ -1,0 +1,118 @@
+USE muebleria_martinez;
+
+INSERT INTO Proveedor(id_proveedor, nombre_proveedor, telefono_proveedor, direccion_proveedor, email_proveedor, numero_cuenta_proveedor)
+VAlUES
+(1,'Astilla Muebles', '11-4163-2355', 'AV. Cabildo 2354', 'Astilla_Muebleria@gmail.com','BS0033251242001354497665'),
+(2,'Muebleria La Familia', '2477-668452', 'AV. 25 de Mayo 2709', 'laFamilia_Muebles@gmail.com', 'BC0125446532022889451337'),
+(3,'Muebleria Cordoba', '341-568-2254', 'Cordoba y Mitre', 'Muebles_Cordoba@gamil.com', 'BP2033100015220364889512'),
+(4,'La Elegida', '11-4356-5581', 'AV. Libertador 1269', 'Muebleria_LaElegidaOk@gmail.com', 'BS0023115436899615423518'),
+(5,'Valencia Muebles', '351-125-4459', 'Suipacha y Entre Rios', 'Muebleria_Valencia@gmail.com', 'BM0325468897001458332657')
+;
+
+
+INSERT INTO Producto (id_producto, nombre_producto, precio_producto, descuento_producto, categoria_producto)
+Values
+(1, 'Mesa Escandinava con Tapa de Vidrio', 87500.99, 0, 'Mesa'),
+(2, 'Mesa Escandinava con Tapa de Marmol', 125000.00, 0, 'Mesa'),
+(3, 'Mesa Encandinava con Tapa de Madera', 110599.99, 0, 'Mesa'),
+(4, 'Mesa Extensible Luxury', 150000.00, 0, 'Mesa'),
+(5, 'Mesa Redonda con Tapa de Marmol', 128500.50, 0, 'Mesa'),
+(6, 'Mesa Redonda con Tapa de Vidrio', 115000.00, 0, 'Mesa'),
+(7, 'Mesa Redonda con Tapa de Madera', 105999.99, 0, 'Mesa'),
+(8, 'Mesa Rectangular con Tapa de Marmol', 175099.99, 0, 'Mesa'),
+(9, 'Mesa Rectangular con Tapa de Vidrio', 154999.99, 0, 'Mesa'),
+(10, 'Mesa Rectangular con Tapa de Madera', 128000.50, 0, 'Mesa'),
+(11, 'Mesa Ratona Industrial Con Patas de Metal', 65000.00, 0, 'Mesa Ratona'),
+(12, 'Mesa Ratona Industrial con Patas de Madera', 68999.00, 0, 'Mesa Ratona'),
+(13, 'Mesa Ratona Escandinaba con Tapa de Marmol', 47099.50, 0, 'Mesa Ratona'),
+(14, 'Mesa Ratona Escandinava con Tapa de Vidrio', 42000.50, 0, 'Mesa Ratona'),
+(15, 'Mesa Ratona Escandinava con Tapa de Madera', 37999.99, 0, 'Mesa Ratona'),
+(16, 'Mesas Ratonas Nido de Madera', 39000.00, 0, 'Mesa Ratona'),
+(17, 'Mesas Ratonas Nido de Metal', 37599.99, 0, 'Mesa Ratona'),
+(18, 'Mesa Ratona de Madera con Cajon', 23000.00, 0, 'Mesa Ratona'),
+(19, 'Mesa Ratona de Metal con Cajon', 22599.99, 0, 'Mesa Ratona'),
+(20, 'Sillón Marquesi 2 Cuerpos', 85599.99, 0, 'Sillón'),
+(21, 'Sillón Marquesi 3 Cuerpos', 105000.50, 0, 'Sillón'),
+(22, 'Sillón Boston 2 Cuerpos', 97555.50, 0, 'Sillón'),
+(23, 'Sillón Boston 3 Cuerpos', 113299.99,0, 'Sillón'),
+(24, 'Sillón Liberty 2 Cuerpos', 110999.99, 0, 'Sillón'),
+(25, 'Sillón Liberty 3 Cuerpos', 135000.58, 0, 'Sillón'),
+(26, 'Poltrona Curva Italy', 79500.34, 0, 'Poltrona'),
+(27, 'Poltrona Manhatan', 49999.76, 0, 'Poltrona'),
+(28, 'Poltrona Reclinable Hercules', 158999.24, 0, 'Poltrona'),
+(29, 'Poltrona Berlin', 36789.99, 0, 'Poltrona'),
+(30, 'Poltrona Frontera Dormund', 78699.99, 0, 'Poltrona'),
+(31, 'Silla Escandinava Con Capitone', 38999.99, 0, 'Silla'),
+(32, 'Silla Escandinava Con Esterilla', 45750.25, 0, 'Silla'),
+(33, 'Silla Escandinava Tapizada', 38990.78, 0, 'Silla'),
+(34, 'Silla Tapizada Braun', 34730.25, 0, 'Silla'),
+(35, 'Silla Tapizada Chess', 38450.50, 0, 'Silla'),
+(36, 'Silla Tapizada Freya', 36920.99, 0, 'Silla'),
+(37, 'Silla de Madera Ragnar', 51589.99, 0, 'Silla'),
+(38, 'Silla de Madera Vilma', 42562.00, 0, 'Silla'),
+(39, 'Silla de Madera Ana', 23999.00, 0, 'Silla'),
+(40, 'Silla de Madera Leo', 15890.99, 0, 'Silla')
+;
+
+INSERT INTO Empleado VALUES
+
+(1, 'Marcos Lopez', 160000, '351-421-1576'),
+(2, 'Maria Dominguez', 175000, '11-1534-7786'),
+(3, 'Eugenia Martinez', 180000, '11-2357-1120'),
+(4, 'Fernando Sanchez', 170000, '11-4562-5580'),
+(5, 'Marcelo Juarez', 150000, '351-711-5312')
+;
+
+INSERT INTO Distribuidor VALUES
+
+(1, 'Juan Hernandez', 100000, '11-4587-3364'),
+(2, 'Marcelo Fernandez', 100000, '11-7759,1125'),
+(3, 'Mariano Muller', 90000, '351-155-9882'),
+(4, 'Santiago Ortega', 90000, '351-642-2351');
+
+
+INSERT INTO Stock VALUES
+
+(1, 1, 'Mesa Escandinava con Tapa de Vidrio', 20),
+(2, 1, 'Mesa Escandinava con Tapa de Marmol', 20),
+(3, 1, 'Mesa Encandinava con Tapa de Madera', 20),
+(4, 1, 'Mesa Extensible Luxury', 20),
+(5, 1, 'Mesa Redonda con Tapa de Marmol', 20),
+(6, 1, 'Mesa Redonda con Tapa de Vidrio', 20),
+(7, 1, 'Mesa Redonda con Tapa de Madera', 20),
+(8, 1, 'Mesa Rectangular con Tapa de Marmol', 20),
+(9, 1, 'Mesa Rectangular con Tapa de Vidrio', 20),
+(10, 1, 'Mesa Rectangular con Tapa de Madera', 20),
+(11, 2, 'Mesa Ratona Industrial Con Patas de Metal', 20),
+(12, 2, 'Mesa Ratona Industrial con Patas de Madera', 20),
+(13, 2, 'Mesa Ratona Escandinaba con Tapa de Marmol', 20),
+(14, 2, 'Mesa Ratona Escandinava con Tapa de Vidrio', 20),
+(15, 2, 'Mesa Ratona Escandinava con Tapa de Madera', 20),
+(16, 2, 'Mesas Ratonas Nido de Madera', 20),
+(17, 2, 'Mesas Ratonas Nido de Metal', 20),
+(18, 2, 'Mesa Ratona de Madera con Cajon', 20),
+(19, 2, 'Mesa Ratona de Metal con Cajon', 20),
+(20, 3, 'Sillón Marquesi 2 Cuerpos', 20),
+(21, 3, 'Sillón Marquesi 3 Cuerpos', 20),
+(22, 3, 'Sillón Boston 2 Cuerpos', 20),
+(23, 3, 'Sillón Boston 3 Cuerpos', 20),
+(24, 3, 'Sillón Liberty 2 Cuerpos', 20),
+(25, 3, 'Sillón Liberty 3 Cuerpos', 20),
+(26, 4, 'Poltrona Curva Italy', 20),
+(27, 4, 'Poltrona Manhatan', 20),
+(28, 4, 'Poltrona Reclinable Hercules', 20),
+(29, 4, 'Poltrona Berlin', 20),
+(30, 4, 'Poltrona Frontera Dormund', 20),
+(31, 5, 'Silla Escandinava Con Capitone', 20),
+(32, 5, 'Silla Escandinava Con Esterilla', 20),
+(33, 5, 'Silla Escandinava Tapizada', 20),
+(34, 5, 'Silla Tapizada Braun', 20),
+(35, 5, 'Silla Tapizada Chess', 20),
+(36, 5, 'Silla Tapizada Freya', 20),
+(37, 5, 'Silla de Madera Ragnar', 20),
+(38, 5, 'Silla de Madera Vilma', 20),
+(39, 5, 'Silla de Madera Ana', 20),
+(40, 5, 'Silla de Madera Leo', 20);
+
+
+

@@ -1,5 +1,17 @@
 USE muebleria_martinez;
 
+INSERT INTO cliente Values
+
+(1, 'Susana Martinez', 'susanita_73@icloud.com', 54, '2477-369887', 'Velez Sarsfield 2588'),
+(2, 'Alejo Sanchez', 'gallina_029@gmail.com', 31, '11-2548-2239', 'Av Colon 1540'),
+(3, 'Mateo Gutierrez', 'mateito@gmail.com', 25, '341-258-5569', 'Mitre 125'),
+(4, 'Martina Van Hubbert', 'martu_ok@icloud.com', 30, '11-4478-2655', 'Suipacha 806'),
+(5, 'Elisa Molinetti', 'eli_molinetti@gmail.com', 48, '2477-589111', 'Av Las Heras 1477'),
+(6, 'Luisiana Pinero', 'li_pineroOk@icloud.com', 23, '341-458-7759', 'Whellwright 547'),
+(7, 'Liliana Vidal', 'liliana-vidal6842@gmail.com', 57, '341-524-1157', 'Av Avellaneda Bis 182'),
+(8, 'Mario Casanova', 'maritocasanova@gmail.com', 44, '2477-669877', 'Paraguay 285')
+;
+
 INSERT INTO Proveedor(id_proveedor, nombre_proveedor, telefono_proveedor, direccion_proveedor, email_proveedor, numero_cuenta_proveedor)
 VAlUES
 (1,'Astilla Muebles', '11-4163-2355', 'AV. Cabildo 2354', 'Astilla_Muebleria@gmail.com','BS0033251242001354497665'),
@@ -60,7 +72,12 @@ INSERT INTO Empleado VALUES
 (2, 'Maria Dominguez', 175000, '11-1534-7786'),
 (3, 'Eugenia Martinez', 180000, '11-2357-1120'),
 (4, 'Fernando Sanchez', 170000, '11-4562-5580'),
-(5, 'Marcelo Juarez', 150000, '351-711-5312')
+(5, 'Marcelo Juarez', 150000, '351-711-5312'),
+(6, 'Tomas Pettinari', 130000, '2477-633548'),
+(7, 'Valentin Silveira', 130000, '2475-458873'),
+(8, 'Miriam Bruski', 155000, '341-454-7785'),
+(9, 'Lucila Maldonado', 160000, '341-487-1158'),
+(10, 'Lautaro Rodriguez', 180000, '11-1458-4458')
 ;
 
 INSERT INTO Distribuidor VALUES

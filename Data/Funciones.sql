@@ -47,6 +47,63 @@ END$$
 DELIMITER ;
 ;
 
+USE `muebleria_martinez`;
+DROP function IF EXISTS `f_crear_cliente`;
+
+USE `muebleria_martinez`;
+DROP function IF EXISTS `muebleria_martinez`.`f_crear_cliente`;
+;
+
+DELIMITER $$
+USE `muebleria_martinez`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `f_crear_cliente`() RETURNS varchar(50) CHARSET utf8mb4
+    READS SQL DATA
+BEGIN
+	DECLARE cl_nombre VARCHAR(50);
+    SET cl_nombre = (SELECT nombre_cliente FROM cliente ORDER BY RAND() LIMIT 1);
+    RETURN cl_nombre;
+END$$
+
+DELIMITER ;
+;
+
+USE `muebleria_martinez`;
+DROP function IF EXISTS `f_empleado`;
+
+USE `muebleria_martinez`;
+DROP function IF EXISTS `muebleria_martinez`.`f_empleado`;
+;
+
+DELIMITER $$
+USE `muebleria_martinez`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `f_empleado`() RETURNS varchar(50) CHARSET utf8mb4
+    READS SQL DATA
+BEGIN
+	DECLARE emp_nombre VARCHAR(50);
+    SET emp_nombre = (SELECT nombre_empleado FROM empleado ORDER BY RAND() LIMIT 1);
+    RETURN emp_nombre;
+END$$
+
+DELIMITER ;
+;
+
+DELIMITER $$
+USE `muebleria_martinez`$$
+CREATE DEFINER=`root`@`localhost` FUNCTION `f_pedir_productos`() RETURNS varchar(50) CHARSET utf8mb4
+    READS SQL DATA
+BEGIN
+	DECLARE productos VARCHAR(50);
+    SET productos = (SELECT nombre_producto FROM producto ORDER BY RAND() LIMIT 1);
+    RETURN productos;
+END$$
+
+DELIMITER ;
+;
+
+
+
+
+
 SELECT stado_stock(20);
 SELECT sumar_productos_x_categoria('poltrona');
  
